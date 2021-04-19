@@ -1,5 +1,5 @@
 # NodeMusicPlayer
-A simple Music Player using node. (Meant for OBS, but usable with a webbrowser)
+A simple Music Player using node. (Meant for OBS, but usable with most webbrowsers)
 
 ## Hello
 Hello, I'm (Aetherial)Kilix.
@@ -23,7 +23,7 @@ If it runs, and just broke somehow, try replacing the content of the config.json
 }
 ```
 ## How to run it
-Just use the executables... ¯\_(ツ)_/¯
+Just use the executables... ¯\\_(ツ)_/¯
 There should be a commandline-ish window popping up.
 
 -- How to use if when it's running --
