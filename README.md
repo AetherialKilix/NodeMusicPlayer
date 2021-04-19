@@ -39,13 +39,13 @@ Make sure to be able to read this 'chapter' while executing the steps
 2. Click on "View" (or your language-equivalent)
 3. Hover over "Docs"
 4. Click on "Custom Browser Docs..."
--  There should now be a table. If there is anything written in there, you already got some docs, and should know how to add them ;)
+   - There should now be a table. If there is anything written in there, you already got some docs, and should know how to add them ;)
 5. The last row should be empty
-5a The left side defines the name for the doc. i would recommend a name like "Music Player" or "Node Music Player" but you can use "ludhfslh" if you want.
-5b The right side defined where the doc should take it's contents from. here put "http://localhost:2000"
+   - The left side defines the name for the doc. i would recommend a name like "Music Player" or "Node Music Player" but you can use "ludhfslh" if you want.
+   - The right side defined where the doc should take it's contents from. here put "http://localhost:2000"
 6. Click on Apply
 
 ## Legal 
 Feel free to do whatever you want with it.
 If you feel the need to modify/improve it and then charge money for that... i don't care.
-But a shoutout if you use/redistriibute it would be greatly appreciated!
+But a shoutout if you use/redistribute it would be greatly appreciated!
