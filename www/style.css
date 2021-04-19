@@ -1,0 +1,224 @@
+@import "/font/font.css";
+
+body {
+    background-color: #1f1e1f;
+    min-width: 380px;
+    overflow-x: hidden;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+#page_refresh {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+#page_refresh img {
+    width: 32px;
+    height: 32px;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    color: #c4c4c4;
+}
+
+.songname {
+    margin-top: 10px;
+    color: white;
+}
+
+.main .audio {
+    width: 100%;
+    margin: auto;
+}
+
+.nextUp {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    border-bottom: 1px solid #4c4c4c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nextUp .nextUPLabel {
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.nextSong {
+    margin: 5px;
+}
+
+.nextUp button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.nextUp button img {
+    height: 24px;
+    width: 24px;
+}
+
+.songlist {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    border-top: 1px solid #4c4c4c;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: calc(100vh - 550px);
+}
+
+.songlist .songListLabel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.songlist a {
+    padding-left: 5px;
+    display: block;
+    margin: 0;
+    color: #4c4c4c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.songlist a:hover {
+    color: #5c5c5c;
+}
+
+.songpath {
+    margin-top: 10px;
+    border-top: 1px solid #4c4c4c;
+    margin-bottom: 10px;
+}
+
+
+.songpath .pathLabel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    background: #111114;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    min-height: 18px;
+    padding: 3px 10px;
+}
+
+.currPlaySettings {
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid #4c4c4c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.currPlaySettings * {
+    margin-right: 20px;
+    flex: 1 1;
+    height: fit-content;
+    min-width: fit-content;
+}
+
+.colorLabel {
+    margin-bottom: 10px;
+}
+
+.topRow,
+.bottomRow {
+    margin-top: 5px;
+}
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+input[type=radio] + label {
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    visibility: visible;
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 0;
+}
+
+input[type=radio] + label[white] { color: #e8e8e8; }
+
+input[type=radio] + label span {
+    --size: 13px;
+    border-radius: var(--size);
+    width: var(--size);
+    height: var(--size);
+    margin: calc(calc(25px - var(--size)) / 2);
+    display: block;
+    opacity: 0;
+    color: inherit;
+    background-color: currentColor;
+}
+
+input[type=radio]:checked + label span {
+    opacity: 1;
+}
+
+.refreshLabel {
+    margin-bottom: 5px;
+}
+
+.refreshContainter .refresh + label {
+    margin-left: 10px;
+}
+
+.refreshContainter span {
+    margin: 0;
+    margin-left: 10px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    height: 25px;
+}
+
+.songTextLabel {
+    margin-bottom: 10px;
+}

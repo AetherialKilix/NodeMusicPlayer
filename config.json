@@ -1,0 +1,9 @@
+{
+    "songDir": "./songs/",
+    "songText": "Current Song: %0",
+    "songRefresh": 0,
+    "songColor": 1,
+    "songAlign": 0,
+    "volume": 0.426171875,
+    "muted": false
+}

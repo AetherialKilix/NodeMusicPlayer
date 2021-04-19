@@ -1,0 +1,11 @@
+{
+  "name": "musicplayer",
+  "version": "1.0.0",
+  "description": "plays music on a webserver",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "AetherialKilix",
+  "license": "ISC"
+}

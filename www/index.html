@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Node.js Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <button id="page_refresh" onClick="window.location.reload();">
+        <img src="/icons/page_refresh.svg" alt="refresh page">
+    </button>
+    <div class="main">
+        <h5 class="title">CURRENTLY PLAYING:</h5>
+        <h2 class="songname" id="songname"></h2>
+        <div class="audio">
+            <audio onended="next()" id="song" controls autoplay></audio>
+        </div>
+
+        <div class="nextUp">
+            <h5 class="nextUPLabel">NEXT UP:</h5>
+            <div>
+                <button id="skip" onClick="next()">
+                    <img src="/icons/skip.svg" alt="refresh page">
+                </button>
+                <button id="conf_refresh" onClick="reloadSongList()">
+                    <img src="/icons/conf_refresh.svg" alt="refresh page">
+                </button>
+            </div>
+        </div>
+        <h3 class="nextSong" id="nextSong"></h3>
+
+        
+        <div class="songlist">
+            <h5 class="songListLabel">PLAYLIST:</h5>
+            <div id="autogen"></div>
+        </div>
+        
+        <div class="songpath">
+            <h5 class="pathLabel">SONG PATH:</h5>
+            <input type="text" id="songDir" onChange="savePath()">
+        </div>
+
+        <div class="currPlaySettings">
+            <div class="songTextContainer">
+                <h5 class="songTextLabel">CURRENTLY PLAYING TEXT:</h5>   
+                <input type="text" id="songText" onchange="save(r => { window.location.reload(); })">
+            </div>
+            <div class="colorContainer">
+                <h5 class="colorLabel">CURRENTLY PLAYING COLOR:</h5>
+                <div class="topRow">
+                    <input type="radio" name="color" id="black" class="color" style="background-color: black;">
+                    <label for="black" style="background-color: black;" white><span></span></label>
+                    <input type="radio" name="color" id="white" class="color" style="background-color: white;">
+                    <label for="white" style="background-color: white;"><span></span></label>
+                    <input type="radio" name="color" id="yellow" class="color">
+                    <label for="yellow" style="background-color: #FFF456;"><span></span></label>
+                    <input type="radio" name="color" id="orange" class="color">
+                    <label for="orange" style="background-color: #FFB420;"><span></span></label>
+                    <input type="radio" name="color" id="red" class="color">
+                    <label for="red" style="background-color: #FF473D;"><span></span></label>
+                </div>
+                <div class="bottomRow">
+                    <input type="radio" name="color" id="purple" class="color">
+                    <label for="purple" style="background-color: #C55DF9;"><span></span></label>
+                    <input type="radio" name="color" id="blue" class="color">
+                    <label for="blue" style="background-color: #1373DB;"><span></span></label>
+                    <input type="radio" name="color" id="lightblue" class="color">
+                    <label for="lightblue" style="background-color: #61CEFF;"><span></span></label>
+                    <input type="radio" name="color" id="lightgreen" class="color">
+                    <label for="lightgreen" style="background-color: #5EFF86;"><span></span></label>
+                    <input type="radio" name="color" id="gray" class="color">
+                    <label for="gray" style="background-color: #C4C4C4;"><span></span></label>
+                </div>
+            </div>
+            <div class="alignContainer">
+                <h5 class="alignLabel">ALIGNMENT:</h5>
+                <input type="radio" name="align" id="left" class="align">
+                <label for="left"><span></span></label>
+                <input type="radio" name="align" id="center" class="align">
+                <label for="center"><span></span></label>
+                <input type="radio" name="align" id="right" class="align">
+                <label for="right"><span></span></label>
+            </div>
+            <div class="refreshContainter">
+                <h5 class="refreshLabel">REFRESH:</h5>
+                <span>0.5s</span>
+                <span>1s</span>
+                <span>5s</span>
+                <span>10s</span><br>
+                <input type="radio" name="refresh" id="05" class="refresh">
+                <label for="05"><span></span></label>
+                <input type="radio" name="refresh" id="1" class="refresh">
+                <label for="1"><span></span></label>
+                <input type="radio" name="refresh" id="5" class="refresh">
+                <label for="5"><span></span></label>
+                <input type="radio" name="refresh" id="10" class="refresh">
+                <label for="10"><span></span></label>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
