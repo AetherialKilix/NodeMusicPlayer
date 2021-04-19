@@ -11,7 +11,7 @@ Many Thanks to Aehter, for the UI design.
 Well I honestly don't know... the launching files were made with a npm plugin, that I did not read into at all.
 You might need to install node.js to be able to run them.
 If it runs, and just broke somehow, try replacing the content of the config.json file with this (these are the default values):
-
+```
 {
     "songDir": "./songs/",
     "songText": "Current Song: %0",
@@ -21,7 +21,7 @@ If it runs, and just broke somehow, try replacing the content of the config.json
     "volume": 1,
     "muted": false
 }
-
+```
 ## How to run it
 Just use the executables... ¯\_(ツ)_/¯
 There should be a commandline-ish window popping up.
