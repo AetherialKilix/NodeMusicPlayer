@@ -26,7 +26,7 @@ If it runs, and just broke somehow, try replacing the content of the config.json
 Just use the executables... ¯\\_(ツ)_/¯
 There should be a commandline-ish window popping up.
 
--- How to use if when it's running --
+## How to use if when it's running
 To open the control panel, visit http://localhost:2000 in a webbrowser.
 This application was designed to be used with OBS, as a docked window, for a quick tutorial on how to do that, look at the next "header".
 To open the "Currently Playing" text, visit http://localhost:2000/current
