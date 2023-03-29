@@ -49,3 +49,7 @@ Make sure to be able to read this 'chapter' while executing the steps
 Feel free to do whatever you want with it.
 If you feel the need to modify/improve it and then charge money for that... i don't care.
 But a shoutout if you use/redistribute it would be greatly appreciated!
+
+## LICENSE:
+DO WHAT THE FUCK YOU WANT:
+<a href="http://www.wtfpl.net/"><img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL" /></a>
